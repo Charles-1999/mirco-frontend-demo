@@ -1,0 +1,22 @@
+{
+  "name": "seven-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mirco:start": "npm-run-all --parallel start:*",
+    "mirco:install": "npm-run-all --parallel install:*",
+    "start:main": "cd main && yarn start",
+    "install:main": "cd main && yarn",
+    "start:antd": "cd antd && yarn start",
+    "install:antd": "cd antd && yarn",
+    "start:fusion": "cd fusion && yarn start",
+    "install:fusion": "cd fusion && yarn"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
